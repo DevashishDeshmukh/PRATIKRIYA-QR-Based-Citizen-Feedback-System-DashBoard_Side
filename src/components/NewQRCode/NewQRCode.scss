@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.app {
+    margin: 0.4rem 1rem;
+    display: grid;
+    background-color: #f2f2ff;
+    border-radius: 8px;
+    padding-top: 4rem;
+    font-family: 'Poppins', sans-serif;
+
+    .onecolumn {
+        display: flex;
+        width: 90%;
+        margin: 5px;
+        padding-bottom: 10px;
+
+        .oneelement {
+            // background-color: #cbeb;
+            display: flex;
+            // justify-content: space-evenly;
+            justify-content: space-between;
+            margin: 0 1.8rem 0 3.8rem;
+            width: 50%;
+            height: 3rem;
+
+            .labelsearch {
+                font-size: 1.7rem;
+                font-weight: bold;
+            }
+
+            .inputdata {
+                width: 20rem;
+                height: 3.0rem;
+                border-radius: 5px;
+                padding-left: 1rem;
+                color: rgb(55, 54, 54);
+                font-size: 1.5rem;
+            }
+            
+
+            input[type=number] {
+                width: 15rem;
+                height: 2.7rem;
+            }
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+    }
+
+    .lastcolumn {
+        display: flex;
+        width: 90%;
+        margin: 5px;
+        padding-bottom: 10px;
+
+        .lastelement {
+            display: flex;
+            grid-area: auto;
+            justify-content: space-between;
+            margin: 0 1.8rem 0 3.8rem;
+            width: 44.2%;
+            height: 3rem;
+
+            .labelsearch {
+                font-weight: bolder;
+                font-size: 1.7rem;
+            }
+
+            .inputdata {
+                width: 20rem;
+                height: 3.0rem;
+                border-radius: 5px;
+                padding-left: 1rem;
+                color: rgb(55, 54, 54);
+                font-size: 1.5rem;
+
+
+            }
+
+            input[type=number] {
+                width: 18.5rem;
+                height: 2.7rem;
+            }
+
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+            }
+
+            button {
+                width: fit-content;
+                font-size: 22px;
+            }
+        }
+    }
+
+    @media (max-width: 1700px) {
+        margin: 0.3rem 0.8rem;
+        border-radius: 7px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .onecolumn .oneelement {
+            margin: 0 1.0rem 0 3.0rem;
+            width: 50%;
+            height: 2.8rem;
+
+            .labelsearch {
+                font-size: 1.4em;
+            }
+
+            .inputdata {
+                width: 15em;
+                height: 2.6em;
+                font-size: 1.1em;
+            }
+        }
+
+        .lastcolumn .lastelement {
+            margin: 0 0 0 3rem;
+            height: 2.8rem;
+
+            .labelsearch {
+                font-size: 1.4em;
+            }
+
+            .inputdata {
+                width: 15em;
+                height: 2.6em;
+                font-size: 1.1em;
+            }
+
+            button {
+                font-size: 17px;
+            }
+
+            input[type=number] {
+                width: 15rem;
+                height: 2.4rem;
+            }
+        }
+    }
+}
+
+.qrbox {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    .innerqrbox {
+        img {
+            width: 440px;
+            height: 440px;
+            margin: 50px 50px 15px 0;
+        }
+
+        .downloadbutton {
+            width: 440px;
+            height: 60px;
+            font-size: 1.7rem;
+
+            &:hover {
+                background-color: rgb(2, 84, 38);
+            }
+        }
+    }
+}

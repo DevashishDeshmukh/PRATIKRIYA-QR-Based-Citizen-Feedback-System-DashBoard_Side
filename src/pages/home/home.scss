@@ -1,0 +1,181 @@
+.home {
+    display: flex;
+    background-color: #fefeff;
+
+    .homeContainer {
+        flex: 6;
+
+        .widgets {
+            display: flex;
+            margin: 5rem 1rem 0 1rem;
+            font-size: 2rem;
+            align-items: center;
+            height: 5rem;
+            border-radius: 5px;
+            padding-left: 2rem;
+            border: 1px solid #feca;
+            color: white;
+            font-weight: bolder;
+            background-color: yellowgreen;
+        }
+
+        .charts {
+            display: grid;
+            background-color: #f2f2ff;
+            margin: 0.4rem 1rem;
+            border-radius: 8px;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+
+            // margin: 30px;
+            .onecolumn {
+                display: flex;
+                width: 95%;
+                padding-bottom: 10px;
+
+                .oneelement {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0 1.8rem 0 3.8rem;
+                    width: 50%;
+                    height: 3rem;
+
+                    .labelsearch {
+                        font-size: 1.7rem;
+                        font-weight: bold;
+                    }
+
+                    .form-select {
+                        width: 20rem;
+                        height: 3.0rem;
+                        border-radius: 5px;
+                        padding-left: 1rem;
+                        color: rgb(55, 54, 54);
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .lastcolumn {
+                display: flex;
+                width: 95%;
+                padding-bottom: 10px;
+
+                .lastelement {
+                    display: flex;
+                    grid-area: auto;
+                    justify-content: space-between;
+                    margin: 0 1.8rem 0 3.8rem;
+                    width: 90%;
+                    height: 3rem;
+
+                    .searchbydate {
+                        font-weight: bolder;
+                        font-size: 1.7rem;
+                    }
+
+                    .begin {
+                        width: 20rem;
+                        height: 3.0rem;
+                        border-radius: 5px;
+                        padding-left: 1rem;
+                        color: rgb(55, 54, 54);
+                        font-size: 1.5rem;
+                    }
+
+                    button {
+                        width: 7.5rem;
+                        font-size: 1.7rem;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        .table{
+            background-color: rgb(172, 208, 228);
+            .cellWrapper {
+              display: flex;
+              align-items: center;
+          
+              .image {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                margin-right: 10px;
+                object-fit: cover;
+              }
+            }
+          
+            .status {
+              padding: 5px;
+              border-radius: 5px;
+          
+              &.Approved {
+                color: green;
+                background-color: rgba(0, 128, 0, 0.151);
+              }
+              &.Pending {
+                color: goldenrod;
+                background-color: rgba(189, 189, 3, 0.103);
+              }
+            }
+          }
+
+        @media (max-width: 1700px){
+            .widgets{
+                margin: 3rem 0.8rem 0 0.8rem;
+                font-size: 1.7rem;
+                height: 3.6rem;
+                border-radius: 3px;
+                padding-left: 1.6rem;
+            }
+
+            .charts{
+                margin: 0.3rem 0.8rem;
+                border-radius: 7px;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                .onecolumn .oneelement{
+                    margin: 0 1.0rem 0 3.0rem;
+                    width: 50%;
+                    height: 2.8rem;
+                    .labelsearch{
+                        font-size: 1.4em;
+                    }
+                    .form-select{
+                        width: 15em;
+                        height: 2.6em;
+                        font-size: 1.1em;
+                    }
+                }
+
+                .lastcolumn .lastelement{
+                    margin: 0 0 0 3rem;
+                    width: 90%;
+                    height: 2.8rem;
+                    .searchbydate{
+                        font-size: 1.4em;
+                    }
+
+                    .begin{
+                        width: 15em;
+                        height: 2.6em;
+                        font-size: 1.1em;
+                    }
+
+                    button{
+                        width: 6rem;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

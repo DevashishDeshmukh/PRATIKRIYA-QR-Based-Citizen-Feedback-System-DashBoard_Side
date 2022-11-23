@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  width: 100%;
+
+  .listContainer {
+    flex: 6;
+
+    .widgets {
+      display: flex;
+      margin: 5rem 1rem 0 1rem;
+      font-size: 2rem;
+      align-items: center;
+      height: 5rem;
+      border-radius: 5px;
+      padding-left: 2rem;
+      border: 1px solid #feca;
+      color: white;
+      font-weight: bolder;
+      background-color: yellowgreen;
+    }
+
+    @media (max-width: 1700px) {
+      .widgets {
+        margin: 3rem 0.8rem 0 0.8rem;
+        font-size: 1.7rem;
+        height: 3.6rem;
+        border-radius: 3px;
+        padding-left: 1.6rem;
+      }
+    }
+  }
+}
