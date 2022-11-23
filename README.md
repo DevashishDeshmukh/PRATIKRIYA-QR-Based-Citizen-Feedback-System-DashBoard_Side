@@ -1,3 +1,13 @@
+#To run this app
+
+First Clone this repo.
+Then open "server" folder in terminal then run command "npm install", then run command "npm run dev".
+Then open main project folder in terminal then run command "npm install", then run command "npm start".
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
