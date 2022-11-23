@@ -1,5 +1,7 @@
 #To run this app
 
+In config.env file ente your mongodb Database Link 
+
 First Clone this repo.
 Then open "server" folder in terminal then run command "npm install", then run command "npm run dev".
 Then open main project folder in terminal then run command "npm install", then run command "npm start".
